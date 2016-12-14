@@ -1,0 +1,74 @@
+{
+	"name": "clientUtils",
+	"displayName": "clientUtils",
+	"version": 1,
+ 	"definition": "clientutils/clientUtils/clientUtils.js",
+	"libraries": [],
+	"model":
+	{
+    	"text": "string"
+ 	},
+ 	"api":
+ 	{
+	   	"fadeIn": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"elementId",
+					"type":"string"
+				},
+				{
+					"name":"options",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"fadeOut": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"elementId",
+					"type":"string"
+				},
+				{
+					"name":"options",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"show": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"elementId",
+					"type":"string"
+				},
+				{
+					"name":"options",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"hide": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"elementId",
+					"type":"string"
+				},
+				{
+					"name":"options",
+					"type":"object",
+					"optional":true
+				}
+			]
+		}
+ 	}
+}

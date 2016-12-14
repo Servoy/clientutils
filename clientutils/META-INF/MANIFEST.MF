@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: clientutils
+Bundle-Name: Client Utils
+Bundle-Version: 1.0.0
+Package-Type: Web-Service
+
+Name: clientUtils/clientUtils.spec
+Web-Service: True
+
