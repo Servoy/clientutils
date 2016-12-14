@@ -6,20 +6,86 @@
 	"libraries": [],
 	"model":
 	{
-    	"text": "string"
+    	"onlySelectById": {"type": "boolean", "default": true} 
  	},
  	"api":
  	{
-	   	"fadeIn": 
+	   	"addClass": 
 	   	{
 	    	"parameters":
 	    	[
 		    	{
-					"name":"elementId",
+					"name":"jQuerySelector",
 					"type":"string"
 				},
 				{
-					"name":"options",
+					"name":"className",
+					"type":"string"
+				}
+			]
+		},
+		"setCss": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"propertyNameOrObject",
+					"type":"string"
+				},
+				{
+					"name":"value",
+					"type":"string",
+					"optional":true
+				}
+			]
+		},
+		"removeClass": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"className",
+					"type":"string"
+				}
+			]
+		},
+		"toggleClass": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"className",
+					"type":"string"
+				},
+				{
+					"name":"state",
+					"type":"boolean",
+					"optional":true
+				}
+			]
+		},
+		"fadeIn": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"durationOrOptions",
 					"type":"object",
 					"optional":true
 				}
@@ -30,11 +96,26 @@
 	    	"parameters":
 	    	[
 		    	{
-					"name":"elementId",
+					"name":"jQuerySelector",
 					"type":"string"
 				},
 				{
 					"name":"options",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"fadeToggle": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"durationOrOptions",
 					"type":"object",
 					"optional":true
 				}
@@ -45,11 +126,11 @@
 	    	"parameters":
 	    	[
 		    	{
-					"name":"elementId",
+					"name":"jQuerySelector",
 					"type":"string"
 				},
 				{
-					"name":"options",
+					"name":"durationOrOptions",
 					"type":"object",
 					"optional":true
 				}
@@ -60,11 +141,56 @@
 	    	"parameters":
 	    	[
 		    	{
-					"name":"elementId",
+					"name":"jQuerySelector",
 					"type":"string"
 				},
 				{
-					"name":"options",
+					"name":"durationOrOptions",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"toggle": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"durationOrOptions",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"slideDown": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"durationOrOptions",
+					"type":"object",
+					"optional":true
+				}
+			]
+		},
+		"slideUp": 
+	   	{
+	    	"parameters":
+	    	[
+		    	{
+					"name":"jQuerySelector",
+					"type":"string"
+				},
+				{
+					"name":"durationOrOptions",
 					"type":"object",
 					"optional":true
 				}

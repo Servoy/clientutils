@@ -1,0 +1,12 @@
+{
+    "name":"clientUtils",
+    "displayName":"Client Utils",
+    "packageType": "Web-Service",
+    "icon": "https://raw.githubusercontent.com/Servoy/clientutils/master/clientUtils/servoy.png",
+    "description": "This is the package contains services that allow JQuery element manipulations in the client",
+    "wikiUrl": "https://github.com/Servoy/clientutils/wiki",
+    "sourceUrl" : "https://github.com/Servoy/clientutils",
+    "releases" : [
+    	{"version":"1.0.0","url":"https://github.com/Servoy/clientutils/releases/download/v1.0.0/clientutils.zip", "servoy-version":"8.1"}
+    ]
+}
